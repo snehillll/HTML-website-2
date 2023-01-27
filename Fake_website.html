@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: #3589e9;
+            color: white;
+        }
+
+        /* Increase the font size of the heading */
+        .header h1 {
+            font-size: 40px;
+        }
+
+        /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+
+        /* Right-aligned link */
+        .navbar a.right {
+            float: right;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Active/current link */
+        .navbar a.active {
+            background-color: #666;
+            color: white;
+        }
+
+        /* Column container */
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            -ms-flex: 30%;
+            /* IE10 */
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        /* Main column */
+        .main {
+            -ms-flex: 70%;
+            /* IE10 */
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* Fake image, just for this example */
+        .fakeimg1 {
+            background-color: rgb(209, 252, 233);
+            width: 100%;
+            padding: 20px;
+        }
+
+        .fakeimg2 {
+            background-color: rgb(255, 157, 157);
+            width: 100%;
+            padding: 20px;
+        }
+
+        .fakeimg3 {
+            background-color: rgb(152, 248, 171);
+            width: 100%;
+            padding: 20px;
+        }
+
+        .fakeimg4 {
+            background-color: rgb(171, 111, 235);
+            width: 100%;
+            padding: 20px;
+            
+        }
+        .fakeimg5 {
+            background-color: rgb(171, 111, 235);
+            width: 100%;
+            padding: 20px;
+            
+        }
+
+
+        .fakeimg5 {
+            background-color: rgb(255, 243, 149);
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>My Website</h1>
+        <p>A <b>responsive</b> website created by Snehil.</p>
+    </div>
+
+    <div class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#" class="right">Link</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>The Vampire Universe</h2>
+            <div class="fakeimg5" style="height:200px;">Image</div>
+            <p>The lives, loves, dangers and disasters in the town, Mystic Falls, Virginia. Creatures of unspeakable
+                horror lurk beneath this town as a teenage girl is suddenly torn between two vampire brothers. After
+                centuries of quarreling, Stefan and Damon Salvatore return to their original town of Mystic Fall,
+                Virginia.</p>
+            <div class="fakeimg1" img src = "https://www.w3schools.com/w3css/img_lights.jpg" style="height:60px;">Image</div><br>
+            <div class="fakeimg2" style="height:60px;">Image</div><br>
+            <div class="fakeimg3" style="height:60px;">Image</div>
+        </div>
+        <div class="main">
+            <h2>The Vampire Diaries</h2>
+            <h5>Dec 27, 2023</h5>
+            <div class="fakeimg4" style="height:200px;">Image</div>
+            <p>The series focuses on the fictional town of Mystic Falls, Virginia, that is charged with supernatural
+                history. It follows Elena Gilbert portrayed by Nina Dobrev as she begins to get over her parents' death,
+                when two vampires pull her into a world she didn't know before, Stefan and Damon Salvatore, portrayed by
+                Paul Wesley and Ian Somerhalder, respectively.</p>
+            <br>
+            <h2>The Originals</h2>
+            <h5> Dec 27, 2023</h5>
+            <div class="fakeimg5" style="height:200px;">Image</div>
+            <p>The Originals, a spin-off of The Vampire Diaries, centers on three of the Mikaelson siblings: Klaus
+                (Joseph Morgan), Elijah (Daniel Gillies), and Rebekah (Claire Holt). The Mikaelson family are also
+                commonly known as "the Originals" due to the fact that they are the first vampires ever to exist. Klaus
+                is the son of a witch and a werewolf, and his quest to unleash his hybrid nature was detailed in The
+                Vampire Diaries.</p>
+        </div>
+    </div>
+</body>
+
+</html>
